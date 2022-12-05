@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Heebo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+$navColor: #6aa2d8;
+$liHover: #ffffe3;
+$letterColor: #00ffdd;
+
+header{
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b9713a1d-72bb-4e76-9579-7d3927a73d0a/dfevazh-d17e4a7d-fdcb-4473-b450-0fe39000b919.png/v1/fill/w_1280,h_704,q_80,strp/simpsons_sky_background_by_wreny2001_dfevazh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzA0IiwicGF0aCI6IlwvZlwvYjk3MTNhMWQtNzJiYi00ZTc2LTk1NzktN2QzOTI3YTczZDBhXC9kZmV2YXpoLWQxN2U0YTdkLWZkY2ItNDQ3My1iNDUwLTBmZTM5MDAwYjkxOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ObZTlqsUDjfuA8WenBgRAgtZTJ1Snf-s2Mbc90af1lE);
+  background-position-y: center;
+  background-size: cover;
+  height: 25rem;
+  margin-bottom: 2em;
+}
+
+nav{
+  padding: 3px;
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    max-height: 6rem;
+  }
+
+  img {
+    width: 10%;
+    max-width: 12rem;
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      color: $letterColor;
+      display: inline;
+      border-radius: 20px;
+      list-style: none;
+      padding: 5px 25px;
+      font-weight: 700;
+      font-family: 'Blinker', sans-serif;
+      font-size: 1.6rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $navColor;
+      }
+    }
+  }
+
+}
+
+.content-title {
+  h1{
+    color: #daba11;
+    display: flex;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    width: 100%;
+    font-size: 10rem;
+  }
+}
