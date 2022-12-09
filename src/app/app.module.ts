@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,7 @@ import { CardComponent } from './card/card.component';
 import { CuriositesCardComponent } from './curiosites-card/curiosites-card.component';
 import { ContentComponent } from './content/content.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +18,13 @@ import { ContentComponent } from './content/content.component';
     SmallCardComponent,
     CardComponent,
     CuriositesCardComponent,
-    ContentComponent
+    ContentComponent,
+    MatDialogModule
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MatDialogModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

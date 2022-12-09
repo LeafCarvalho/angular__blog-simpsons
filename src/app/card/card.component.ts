@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-card',
@@ -14,6 +15,18 @@ export class CardComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  addLive(): void {
+    let dialogRef = this.dialog.open(DialogComponent, {
+      height: '400px',
+      width: '600px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('the dialog was closed', result)
+    })
+
   }
 
 }

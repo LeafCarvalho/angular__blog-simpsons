@@ -12,4 +12,4 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}
+  }
